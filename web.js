@@ -7,7 +7,7 @@ var fs =require('fs');
     hText = new Buffer(256);
     hText.write(fs.readFileSync('index.html','utf-8'));
     
-    response.send(hText.toString('utf8',0,27));
+    response.send(hText.toString('utf8'));
 });
 
 var port = process.env.PORT || 5000;
